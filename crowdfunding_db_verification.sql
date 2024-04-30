@@ -41,9 +41,9 @@ SELECT
 	email
 FROM
 	campaign a
-	LEFT JOIN category b on a.category_id = b.category_id
-	LEFT JOIN subcategory c on a.subcategory_id = c.subcategory_id
-	LEFT JOIN contacts d on a.contact_id = d.contact_id
+	LEFT JOIN category b ON a.category_id = b.category_id
+	LEFT JOIN subcategory c ON a.subcategory_id = c.subcategory_id
+	LEFT JOIN contacts d ON a.contact_id = d.contact_id
 WHERE
 	outcome IN ('successful')
 ORDER BY
